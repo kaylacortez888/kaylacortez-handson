@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "I currently work as an Engagement Guide at the UC Irvine Langson Orange County Museum of Art and I am passionate about expanding outreach. This has influence me to furthering my career and getting a M.S. in Digital Marketing at Cal Poly Pomona."
+  },
+  {
+    "objectID": "index.html#we-want-to-address",
+    "href": "index.html#we-want-to-address",
+    "title": "Home",
+    "section": "We want to address",
+    "text": "We want to address\n\nWhich traffic channels generate highest sessions?\nWhich channels produce strong engagement rates?\nDoes channels with high traffic produce strong engagement?"
+  },
+  {
+    "objectID": "index.html#data-being-used",
+    "href": "index.html#data-being-used",
+    "title": "Home",
+    "section": "Data being used",
+    "text": "Data being used\n\nSessions\nUsers\nEngaged Sessions\nEngagement Rate\nDevice Category\nEvent Date\nTotal Engagement Rate"
+  },
+  {
+    "objectID": "shiny-app.html",
+    "href": "shiny-app.html",
+    "title": "Shiny App",
+    "section": "",
+    "text": "The Shiny App focuses on device category and sessions over time. It is an interactive dashboard that can be filtered by desktop, mobile, or tablet with adjustable time frame.\nOpen the Shiny App Directly"
+  },
+  {
+    "objectID": "shiny-app.html#ncma-sgv-website-performance-shiny-app",
+    "href": "shiny-app.html#ncma-sgv-website-performance-shiny-app",
+    "title": "Shiny App",
+    "section": "",
+    "text": "The Shiny App focuses on device category and sessions over time. It is an interactive dashboard that can be filtered by desktop, mobile, or tablet with adjustable time frame.\nOpen the Shiny App Directly"
+  },
+  {
+    "objectID": "shinylive.html",
+    "href": "shinylive.html",
+    "title": "Shiny Live",
+    "section": "",
+    "text": "The “Creative Interactive Apps with Shiny in R” is more focused on user interface and server funtion. The server can process inputs, perform calculations, and generate plots, tables, and text. This approach is really greate for large dashboard, secure applications, and projects requiring databases.\nMeanwhile ShinyLive builds on the Shiny concepts, but has a different deployment model. Instead of using remote server, Shinylive moves R runtime directly to the browswer through WebR. So the computations happen locally in the user’s browswer instead of hosted server.\n\nSome advantages of Shinylive is that it reduces hosting and lower deployment costs because no server is required. It is also easier for public accessinility, but there are limitations compared to Shiny apps. Since the code and the data is downloaded into the browswer. Which is why it is important not to have sensitive infromation on it."
+  },
+  {
+    "objectID": "shinylive.html#what-is-shinylive-assume-that-you-are-also-explaining-it-to-your-coworkers.-how-does-it-differ-from-the-traditional-shiny-app-introduced-in-step-2-what-are-the-pros-and-cons-of-shinylive-in-comparison-with-shiny-apps-these-lecture-notes-will-become-your-essay-on-shiny-live-part-of-the-website.",
+    "href": "shinylive.html#what-is-shinylive-assume-that-you-are-also-explaining-it-to-your-coworkers.-how-does-it-differ-from-the-traditional-shiny-app-introduced-in-step-2-what-are-the-pros-and-cons-of-shinylive-in-comparison-with-shiny-apps-these-lecture-notes-will-become-your-essay-on-shiny-live-part-of-the-website.",
+    "title": "Shiny Live",
+    "section": "",
+    "text": "The “Creative Interactive Apps with Shiny in R” is more focused on user interface and server funtion. The server can process inputs, perform calculations, and generate plots, tables, and text. This approach is really greate for large dashboard, secure applications, and projects requiring databases.\nMeanwhile ShinyLive builds on the Shiny concepts, but has a different deployment model. Instead of using remote server, Shinylive moves R runtime directly to the browswer through WebR. So the computations happen locally in the user’s browswer instead of hosted server.\n\nSome advantages of Shinylive is that it reduces hosting and lower deployment costs because no server is required. It is also easier for public accessinility, but there are limitations compared to Shiny apps. Since the code and the data is downloaded into the browswer. Which is why it is important not to have sensitive infromation on it."
+  }
+]

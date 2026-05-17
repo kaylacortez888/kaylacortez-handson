@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  title: "Kayla Cortez Dashboard Portfolio"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Quarto Dashboard"
+        href: dashboard.qmd
+      - text: "Shiny App"
+        href: shiny-app.qmd
+      - text: "Shiny Live"
+        href: shinylive.qmd
+        
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    embed-resources: true

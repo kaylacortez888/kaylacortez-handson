@@ -1,0 +1,115 @@
+---
+title: "NCMA SGV Website Dashboard"
+
+format:
+  dashboard:
+    theme: cosmo
+
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+# Project 1:
+
+## Project description
+
+-   This dashboard is dedicated in analyzing NCMA SGV website traffic and user engagement using GA4 data. This can help understand which channels generate highest session valume and which channels produces strong engagement.
+
+## Data description
+
+Variables that would be includes is
+
+-   Sessions
+-   Users
+-   Engagement Rate
+-   Device Category
+-   Total engagement time
+
+Channels that we will be looking into includes Direct, Organic Search, Referral, and Other.
+
+### Data
+
+# Total Sessions
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(arrow)
+library(scales)
+ncma_data <- open_dataset("ncma_data/parquet/channel_daily_kpis_v1")
+
+channel_data <- ncma_data |>
+  collect()
+
+total_sessions <- channel_data |>
+  summarise(
+    total_sessions = sum(sessions, na.rm = TRUE)
+  )
+
+total_sessions
+```
+
+# Sessions by Traffic Channel 
+
+```{r}
+
+sessions_by_channel <- channel_data |>
+  group_by(channel) |>
+  summarise(
+    sessions = sum(sessions, na.rm = TRUE)
+  )
+
+ggplot(sessions_by_channel,
+       aes(x = reorder(channel, sessions),
+           y = sessions, 
+           fill = channel)) + 
+geom_col() + 
+  coord_flip() + 
+  theme_minimal() + 
+  labs(
+    title = "Session by Traffic Channel",
+    x = "Traffic Channel",
+    y = "Sessions"
+  ) + scale_y_continuous(labels = comma)
+```
+
+# Engagement Rate by Traffic Channel
+
+```{r}
+engagement_by_channel <- channel_data |>
+  group_by(channel) |>
+  summarise(
+    engagement_rate = mean(engaged_sessions / sessions, na.rm = TRUE)
+  )
+
+ggplot(engagement_by_channel,
+       aes(x = reorder(channel, engagement_rate),
+           y = engagement_rate,
+           fill = channel)) + 
+  geom_col() + 
+  coord_flip() + 
+  theme_minimal() + 
+  labs(
+    title = "Engagement Rate by Traffic Channel",
+    x  = "Traffic Channel",
+    y = "Engagement Rate"
+  ) + scale_y_continuous(labels = percent)
+```
+
+# Findings from the data
+
+-   Sessions by Traffic Channel shows that Direct traffic generates the highest session volume compared to organic search, referral and other.
+
+-   Engagement Rate by Traffic Channel shows how Other and Referral channels actually have stronger engagement rate compared to Direct.
+
+This is important because it means we should not disregard channels with low traffic because it may have strnegths such as engagement.
+
+## Interpret the dashboard charts
+
+-   The sessions by Traffic Charts show that there is strong traffic through Direct channel, however, Engagement Rate by Traffic shows that the referral, organic search, and other have stronger engagement. This can help with decided which attribution model should be used for example last click attribution will over credit direct and won't give proper credit to the other channels. Which is why multi-channel attribution should be considered. 
+
+## Clickable URL of the published web page
+
+https://kaylacortez888.github.io/Kayla-cortez-dashboard/

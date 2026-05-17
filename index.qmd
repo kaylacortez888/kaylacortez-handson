@@ -1,0 +1,104 @@
+---
+title: "Home"
+format: html
+editor: visual
+---
+
+```{=html}
+<style>
+.about-section{
+display: flex;
+align-tems: center;
+gap: 60 px;
+margin-top: 40;
+}
+
+about-image img{
+width 400 px;
+border-radius: 50%;
+}
+
+about-text {
+max-width: 600 px;
+}
+
+.about-text h1 {
+font-size 4rem;
+margin-bottm: 30 px;
+}
+
+.about-text p{
+font-size 1.4rem;
+line-height: 1.8;
+}
+
+</style>
+```
+
+:::: about-section
+::: about-image
+![](kayla.PNG)
+:::
+
+# Kayla Cortez
+
+### Career Apirations
+
+I currently work as an Engagement Guide at the UC Irvine Langson Orange County Museum of Art and I am passionate about expanding outreach. This has influence me to furthering my career and getting a M.S. in Digital Marketing at Cal Poly Pomona.
+::::
+
+------------------------------------------------------------------------
+
+```{=html}
+<style>
+
+.linkedin-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.linkedin-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  border: 2px solid #5c6570;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #5c6570;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.linkedin-button img {
+  display: block;
+}
+
+</style>
+```
+
+::: linkedin-container
+<a href="https://www.linkedin.com/in/kayla-cortez-515b31218/" target="_blank" class="linkedin-button"><img src="LinkedIn_logo_initials.png" width="25"/>LinkedIn</a>
+:::
+
+# NCMA SGV Website Analytics
+
+- The main goal of looking into NCMA SGV website analytics is to further the undertsnading of how users interact with their website across different traffic and device categories. By having dashboards and using Shiny App helps identify user bahvior patterns.
+
+## We want to address
+
+- Which traffic channels generate highest sessions?
+- Which channels produce strong engagement rates?
+- Does channels with high traffic produce strong engagement?
+
+## Data being used
+
+- Sessions
+- Users
+- Engaged Sessions
+- Engagement Rate 
+- Device Category
+- Event Date 
+- Total Engagement Rate
+

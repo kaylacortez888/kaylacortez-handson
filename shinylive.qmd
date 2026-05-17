@@ -1,0 +1,13 @@
+---
+title: "Shiny Live"
+format: html
+editor: visual
+---
+
+## What is Shinylive? Assume that you are also explaining it to your coworkers. How does it differ from the traditional Shiny app introduced in Step 2? What are the pros and cons of Shinylive in comparison with Shiny Apps? These lecture notes will become your "Essay on Shiny Live" part of the website.
+
+-   The "Creative Interactive Apps with Shiny in R" is more focused on user interface and server funtion. The server can process inputs, perform calculations, and generate plots, tables, and text. This approach is really greate for large dashboard, secure applications, and projects requiring databases.
+
+-   Meanwhile ShinyLive builds on the Shiny concepts, but has a different deployment model. Instead of using remote server, Shinylive moves R runtime directly to the browswer through WebR. So the computations happen locally in the user's browswer instead of hosted server.
+
+    -   Some advantages of Shinylive is that it reduces hosting and lower deployment costs because no server is required. It is also easier for public accessinility, but there are limitations compared to Shiny apps. Since the code and the data is downloaded into the browswer. Which is why it is important not to have sensitive infromation on it.

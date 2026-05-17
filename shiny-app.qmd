@@ -1,0 +1,22 @@
+---
+title: "Shiny App"
+format: html
+editor: visual
+---
+
+## NCMA SGV Website Performance Shiny App
+
+The Shiny App focuses on device category and sessions over time. It is an interactive dashboard that can be filtered by desktop, mobile, or tablet with adjustable time frame.
+
+[Open the Shiny App Directly](https://kaylacortez.shinyapps.io/kayla-cortez-dashboard-app/)
+
+```{=html}
+
+<iframe 
+  src="https://kaylacortez.shinyapps.io/kayla-cortez-dashboard-app/"
+  width="100%"
+  height="1100px"
+  style="border:1px solid #ddd;">
+  
+</iframe>
+```
